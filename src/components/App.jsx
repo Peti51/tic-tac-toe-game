@@ -100,7 +100,7 @@ function App() {
       });
     });
 
-// Ellenőrzi, hogy valamelyik átlóban valamelyik játékosnak kigyűlt-e az 5 egymásmelleti jel. (bal felső sarokból-ből a jobb-alsó sarokba)
+// Ellenőrzi, hogy valamelyik átlóban az egyik játékosnak kigyűlt-e az 5 egymásmelleti jel. (bal felső sarokból-ből a jobb-alsó sarokba)
     board.forEach((_, row) => {
       board[row].forEach((_, col) => {
         if (row < rows - winningLength + 1 && col < cols - winningLength + 1) {

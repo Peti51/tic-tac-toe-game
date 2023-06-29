@@ -21,7 +21,7 @@ resetBoard,
     const [firstPlayerSymbol, setFirstPlayerSymbol] = useState('');
     const [secondPlayerSymbol, setSecondPlayerSymbol] = useState('');
     const colors = [
-        { name: 'Light Blue', hexValue: '#33ccff' },
+        { name: 'Blue', hexValue: '#33ccff' },
         { name: 'Red', hexValue: '#ff4d4d' },
         { name: 'Black', hexValue: '#000000' },
         { name: 'Purple', hexValue: '#be2edc' },
