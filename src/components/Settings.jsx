@@ -29,15 +29,7 @@ resetBoard,
         { name: 'Orange', hexValue: '#ff9933' },
       ];
     const symbols = ['x', '?', '$', '#', '&', '@', 'o'];
-    const numbers = [
-        {name:'25', value: 5},
-        {name:'36', value: 6},
-        {name:'49', value: 7}, 
-        {name:'64', value: 8},
-        {name:'81', value: 9},
-        {name:'100', value: 10}
-    ];
-
+    
     const handleFirstPlayerEdit = (event) => {
         event.preventDefault();
 

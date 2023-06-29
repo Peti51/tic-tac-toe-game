@@ -8,7 +8,6 @@ import {
 import '../style/App.css';
 import { Login } from './Login';
 import { Board } from './Board';
-import { GameOver } from './GameOver';
 import { NotFoundPage } from '../components/NotFoundPage.jsx';
 import { MainMenu } from './MainMenu.jsx';
 import { Settings } from './Settings';
