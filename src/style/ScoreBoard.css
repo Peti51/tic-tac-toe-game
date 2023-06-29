@@ -1,0 +1,97 @@
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 5rem;
+    font-size: 1.5em;
+    background-color: none;
+    border: 3px solid white;
+    margin: 3rem auto;
+    margin-top: 0;
+    box-shadow: 0px 0px 8px #888;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 0 20px 20px;
+}
+
+.scoreboard-players {
+    width: 100%;
+    border: none;
+    border-top: 2px solid rgba(255,255,255,0.5);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+}
+
+.x-score {
+    border-radius: 0.5rem 0. 0 0.5rem;
+}
+
+.o-score {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.inactive {
+    border-bottom: transparent;
+}
+
+.scoreboard-title {
+    color: white;
+}
+
+.current-player {
+    border: none;
+}
+
+.firstPlayer-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 300px;
+}
+
+.firstplayer-current-player-text {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255,255,255,0.5);
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+.pluss-margin {
+    margin-top: 69px;
+    border-radius: 20px;
+}
+  
+.firstPlayer-main-container.animate {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 300ms ease-in;
+  }

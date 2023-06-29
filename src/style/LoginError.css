@@ -1,0 +1,47 @@
+.error-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    width:  250px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px #888;
+}
+
+.error-close-button-image {
+    width: 20px;
+    height: 20px;
+}
+
+.error-close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 19px;
+    height: 19px;
+    border: none;
+    border-radius: 50%;
+}
+
+.error-close-button:hover {
+    background: #ff4d4d;
+    box-shadow: 0px 0px 25px #888;
+    border: none;
+}
+
+.error-closebutton-container {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.error-text {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
