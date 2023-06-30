@@ -5,4 +5,7 @@ A JSX (JavaScript XML) használata révén a React lehetővé teszi a komponense
 
 A projekt elindításához szükséges a terminálban az npm install parancs, ezután az npm-mel kell telepíteni a framer-motion-t, ami az animációkért felelős. Azért ezt használtam, mert ennek az alkalmazását találtam a legkézenfekvőbbnek ahhoz, hogy az oldalváltozások megfelelőképpen történjenek meg és az animációk működjenek. Ezután csak az npm start-tal lehet elindítani az alkalmazást.
 
+Felhasználónév: Peti,
+Jelszó: 12345,
+
 [DEMO LINK]:"https://Peti51.github.io/tic-tac-toe-game",
