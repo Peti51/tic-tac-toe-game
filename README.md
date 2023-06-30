@@ -1,70 +1,8 @@
-# Getting Started with Create React App
+A feladat elkészítéséhez a React-et választottam, mert ez a JavaScript keretrendszer számos előnnyel jár a fejlesztés szempontjából. Az egyik fő ok, amiért a React mellett döntöttem, az az, hogy lehetővé teszi a komponensalapú fejlesztést. Ez azt jelenti, hogy a webes alkalmazást különálló komponensekre bonthatom, amiket könnyedén újrahasznosíthatok és kombinálhatok. Ezáltal a kód sokkal modulárisabbá válik, ami egyszerűbb karbantarthatóságot és fejlesztést eredményez. Ezenkívül a React használata során az egész alkalmazásállapot könnyedén kezelhető, mivel a React által biztosított "state" rendszer segítségével az adatok dinamikusan frissíthetők és a felhasználói interakciókra reagálhatnak.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A JSX (JavaScript XML) használata révén a React lehetővé teszi a komponensek és az HTML elemek egyszerű kombinálását. Ezzel a megközelítéssel egy fájlban lehet kezelni mind a JavaScript kódot, mind pedig a hozzá kapcsolódó HTML struktúrát (DOM). Ez nagyban megkönnyíti az alkalmazás kódjának olvashatóságát és karbantarthatóságát.
+Összességében a React alkalmazása egyszerűbbé és könnyebbé teszi a fejlesztési folyamatot. Az előnyei közé tartozik a komponensalapú fejlesztés, az állapotkezelés és a JSX használata, amelyek mind hozzájárulnak a hatékony és rugalmas webalkalmazások létrehozásához.
 
-## Available Scripts
+A projekt elindításához szükséges a terminálban az npm install parancs, ezután az npm-mel kell telepíteni a framer-motion-t, ami az animációkért felelős. Azért ezt használtam, mert ennek az alkalmazását találtam a legkézenfekvőbbnek ahhoz, hogy az oldalváltozások megfelelőképpen történjenek meg és az animációk működjenek. Ezután csak az npm start-tal lehet elindítani az alkalmazást.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[DEMO LINK]:"https://Peti51.github.io/tic-tac-toe-game",
