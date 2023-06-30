@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tic-tac-toe-game/static/css/main.1efad471.css",
-    "main.js": "/tic-tac-toe-game/static/js/main.3a2a3715.js",
+    "main.css": "/tic-tac-toe-game/static/css/main.1144004c.css",
+    "main.js": "/tic-tac-toe-game/static/js/main.ed5364d1.js",
     "static/js/787.bc7d429a.chunk.js": "/tic-tac-toe-game/static/js/787.bc7d429a.chunk.js",
     "static/media/wallpaperflare.com_wallpaper.jpg": "/tic-tac-toe-game/static/media/wallpaperflare.com_wallpaper.9bda1a83a5c9d1cade12.jpg",
     "static/media/cross-round-svgrepo-com.svg": "/tic-tac-toe-game/static/media/cross-round-svgrepo-com.c3e91d9a5ad6aaafb901226d3d2f30ca.svg",
     "index.html": "/tic-tac-toe-game/index.html",
-    "main.1efad471.css.map": "/tic-tac-toe-game/static/css/main.1efad471.css.map",
-    "main.3a2a3715.js.map": "/tic-tac-toe-game/static/js/main.3a2a3715.js.map",
+    "main.1144004c.css.map": "/tic-tac-toe-game/static/css/main.1144004c.css.map",
+    "main.ed5364d1.js.map": "/tic-tac-toe-game/static/js/main.ed5364d1.js.map",
     "787.bc7d429a.chunk.js.map": "/tic-tac-toe-game/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1efad471.css",
-    "static/js/main.3a2a3715.js"
+    "static/css/main.1144004c.css",
+    "static/js/main.ed5364d1.js"
   ]
 }
