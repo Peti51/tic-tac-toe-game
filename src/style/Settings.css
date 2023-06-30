@@ -1,3 +1,9 @@
+/* .settings - Az osztály definiálja a beállítások tartalmának elrendezését. 
+A width tulajdonság 100%-ra van állítva, ami teljes szélességet jelent. 
+A display tulajdonság flex értékkel kombinálva a tartalmat flexbox módban rendezi, 
+a flex-direction: column pedig függőleges irányba helyezi a tartalmat. 
+A justify-content: center és az align-items: center tulajdonságok segítségével 
+középre igazítja a tartalmat mindkét tengelyen. */
 .settings {
     width: 100%;
     display: flex;
@@ -6,6 +12,12 @@
     align-items: center;
 }
 
+/* .setting-container - Ez az osztály a beállítások konténerét definiálja. 
+A display: flex tulajdonság flexbox elrendezést használ, 
+a flex-direction: column pedig függőleges irányban helyezi a tartalmat. 
+Az align-items: center tulajdonság középre igazítja az elemeket a függőleges tengelyen. 
+A width tulajdonság 700px szélességet határoz meg, 
+a padding tulajdonság pedig 50px belső térközt ad a konténernek. */
 .setting-container {
     display: flex;
     flex-direction: column;
@@ -14,6 +26,15 @@
     padding: 50px;
 }
 
+/* .setting-smaller-container - Ez az osztály egy kisebb konténert definiál a beállításokhoz. 
+A width tulajdonság 700px szélességet állít be. 
+A backdrop-filter: blur(15px) tulajdonság elmosódott hatást ad a háttérnek. 
+A border tulajdonság egy 2px vastag, fehér alfa csatornával rendelkező szegélyt hoz létre. 
+A border-radius: 20px tulajdonság egy 20px sugarú lekerekítést ad a konténernek. 
+A display: flex tulajdonság flexbox elrendezést használ, 
+a flex-direction: column pedig függőleges irányban helyezi a tartalmat. 
+A justify-content: center és az align-items: center tulajdonságok középre igazítják 
+az elemeket mindkét tengelyen. */
 .setting-smaller-container {
     width: 700px;
     backdrop-filter: blur(15px);
@@ -25,6 +46,12 @@
     align-items: center;
 }
 
+/* .setting-box - Ez az osztály definiálja a beállításokat tartalmazó dobozt. 
+A height tulajdonság 400px magasságot határoz meg. 
+A width tulajdonság 100%-ra van állítva, így a tartalom teljes szélességet foglal. 
+A display: flex tulajdonság és a justify-content: space-evenly érték az 
+elemeket egyenletesen helyezi el a vízszintes tengelyen. 
+Az align-items: center tulajdonság középre igazítja az elemeket a függőleges tengelyen. */
 .setting-box {
     height: 400px;
     width: 100%;
@@ -33,6 +60,14 @@
     align-items: center;
 }
 
+/* .setting-player-container - Ez az osztály definiálja a 
+játékos beállításait tartalmazó konténert. 
+A display: flex tulajdonság flexbox elrendezést használ, 
+a flex-direction: column pedig függőleges irányban helyezi a tartalmat. 
+A border tulajdonság egy 2px vastag, fehér alfa csatornával rendelkező szegélyt hoz létre. 
+A padding tulajdonság 35px belső térközt ad a konténernek. 
+A height tulajdonság 250px magasságot határoz meg. 
+A border-radius: 20px tulajdonság egy 20px sugarú lekerekítést ad a konténernek. */
 .setting-player-container {
     display: flex;
     flex-direction: column;
@@ -46,11 +81,18 @@
     align-items: center;
 }
 
+/* .setting-color-picker - Ez az osztály definiálja a színválasztó elemet. 
+A margin-top tulajdonság 15px margót ad a felső részhez. */
 .setting-color-picker {
     margin-top: 15px;
 
 }
 
+/* .setting-player-name - Ez az osztály definiálja a játékos nevének beviteli mezőjét. 
+A height tulajdonság 40px magasságot határoz meg. 
+A border tulajdonság nélküli állapotban a mező nincs körülhatárolva, 
+de a border-radius: 20px tulajdonság egy 20px sugarú lekerekítést ad hozzá. 
+A margin-top tulajdonság 10px margót ad a felső részhez. */
 .setting-player-name {
     height: 40px;
     border: none;
@@ -64,16 +106,35 @@
     background-color: white;
 }
 
+/* .setting-title - Ez az osztály definiálja a beállítások címét. 
+A color tulajdonság fehér színt állít be. */
 .setting-title {
     color: white;
 }
 
+/* .color-item - Ez az osztály definiálja a színválasztó elemeket. 
+A width tulajdonság 15px szélességet határoz meg. 
+A height tulajdonság 15px magasságot határoz meg. 
+A background-color tulajdonság az --bg-color változóra van állítva, 
+amely egy háttérszínt határoz meg. */
 .color-item {
     width: 15px;
     height: 15px;
     background-color: var(--bg-color);
 }
 
+/* .back-arrow - Ez az osztály definiálja a visszafelé nyilat. 
+A width tulajdonság 60px szélességet határoz meg. 
+A height tulajdonság 80px magasságot határoz meg. 
+A background-color tulajdonság fehér színt állít be. 
+Az elemet 270 fokkal elforgatja a transform: rotate(270deg) tulajdonság. 
+A display: flex, a justify-content: center és az 
+align-items: center tulajdonságok középre igazítják a tartalmat. 
+A border tulajdonság egy 3px vastag, fehér szegélyt ad a nyílnak. 
+A border-radius: 10px tulajdonság egy 10px sugarú lekerekítést határoz meg. 
+A font-size tulajdonság 25px-es betűméretet állít be. 
+A color tulajdonság fekete színt állít be. 
+A text-decoration tulajdonság nincs beállítva. */
 .back-arrow {
     width: 60px;
     height: 80px;
@@ -93,6 +154,13 @@
     box-shadow: 0px 0px 25px #888;
 }
 
+/* .back-arrow-container - Ez az osztály definiálja a vissza nyíl tartályát. 
+A width tulajdonság 78%-ra van állítva, ami a tartály szélességét határozza meg. 
+A display: flex tulajdonság flexbox elrendezést használ, 
+a justify-content: space-between pedig az elemeket egyenletesen helyezi el 
+a vízszintes tengelyen. A align-items: center tulajdonság középre 
+igazítja az elemeket a függőleges tengelyen. 
+A margin-top tulajdonság 20px margót ad a felső részhez. */
 .back-arrow-container {
     width: 78%;
     display: flex;
@@ -101,6 +169,17 @@
     margin-top: 20px;
 }
 
+/* .reset - Ez az osztály definiálja a visszaállítás gombot. 
+A width tulajdonság 80px szélességet határoz meg. 
+A height tulajdonság 60px magasságot határoz meg. 
+A background-color tulajdonság fehér színt állít be. 
+A display: flex, a justify-content: center és az 
+align-items: center tulajdonságok középre igazítják a tartalmat. 
+A border tulajdonság egy 3px vastag, fehér szegélyt ad a gombnak. 
+A border-radius: 10px tulajdonság egy 10px sugarú lekerekítést határoz meg. 
+A font-size tulajdonság 25px-es betűméretet állít be. 
+A color tulajdonság fekete színt állít be. 
+A text-decoration tulajdonság nincs beállítva. */
 .reset {
     width: 80px;
     height: 60px;
@@ -119,12 +198,24 @@
     box-shadow: 0px 0px 25px #888;
 }
 
+/* .setting-colors - Ez az osztály definiálja a beállítás színét. 
+A width tulajdonság 10px szélességet határoz meg. 
+A height tulajdonság 10px magasságot határoz meg. 
+A border-radius: 50% tulajdonság egy kör alakú megjelenést ad az elemnek. */
 .setting-colors {
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
 
+/* .setting-drop-down - Ez az osztály definiálja a lenyíló menüt a beállításokhoz. 
+A position: relative tulajdonság relatív pozícióban helyezi el az elemet. 
+A width tulajdonság 200px szélességet határoz meg. 
+A height tulajdonság 40px magasságot határoz meg. 
+A background-color tulajdonság átlátszóra van állítva. 
+A margin-bottom tulajdonság 15px margót ad az alsó részhez. 
+A border tulajdonság egy 2px vastag, szürke szegélyt hoz létre. 
+A border-radius: 5px tulajdonság egy 5px sugarú lekerekítést határoz meg. */
 .setting-drop-down {
     position: relative;
     width: 200px;

@@ -1,8 +1,19 @@
+/* Amikor az elem belép a dokumentumba, kezdetben átláthatatlan (0 opacitás) */
 .fade-enter {
     opacity: 0;
 }
-  
+
+/* Amikor az elem belép a dokumentumba, és az átláthatatlanság átmenetet kap */
 .fade-enter-active {
     opacity: 1;
     transition: opacity 500ms ease-in;
   }
+
+/* Ez a CSS kód egy animációt definiál egy elem belépésére. 
+Az .fade-enter osztály alkalmazása az elemre azt jelenti, hogy kezdetben az átláthatósága 0,
+ tehát láthatatlan lesz. 
+ Ezután az .fade-enter-active osztály alkalmazása az elemre azt jelenti, 
+ hogy az átláthatósága fokozatosan növekszik 1-re az opacity tulajdonság segítségével. 
+ A transition tulajdonság beállítja az átmenetet az opacitás változásának 
+ 500 milliszekundumos időtartamra és az ease-in időzítőt használja, 
+ hogy lágyabbá tegye az átmenetet. */

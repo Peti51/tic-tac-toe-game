@@ -1,3 +1,15 @@
+/* .error-inner - Az .error-inner osztályt a JSX kódban található <div> elem használja. 
+Ez az elem tartalmazza az .error-close-button gombot és az .error-text szöveg elemeket. 
+A display: flex tulajdonság flexbox elrendezést használ. 
+A flex-direction: column tulajdonság függőleges irányba rendezkedik el. 
+A justify-content: center és az align-items: center tulajdonságok középre igazítják 
+a tartalmat mindkét tengelyen. 
+A position: relative tulajdonság relatív pozícióban helyezi el az elemet. 
+A height: 100px tulajdonság 100px magasságot határoz meg. 
+A width: 250px tulajdonság 250px szélességet határoz meg. 
+A background-color: whitesmoke tulajdonság a háttérszínre állítja be a whitesmoke színt. 
+A border-radius: 10px tulajdonság egy 10px sugarú lekerekítést határoz meg. 
+A box-shadow: 0px 0px 25px #888 tulajdonság egy árnyékot hoz létre a tartalom körül. */
 .error-inner {
     display: flex;
     flex-direction: column;
@@ -11,11 +23,24 @@
     box-shadow: 0px 0px 25px #888;
 }
 
+/* .error-close-button-image - Ez az osztály definiálja az 
+.error-close-button gomb képének stílusát. 
+A width: 20px tulajdonság 20px szélességet határoz meg. 
+A height: 20px tulajdonság 20px magasságot határoz meg. */
 .error-close-button-image {
     width: 20px;
     height: 20px;
 }
 
+/* .error-close-button - Az .error-close-button osztály definiálja a bezáró gomb stílusát. 
+A display: flex tulajdonság flexbox elrendezést használ. 
+A justify-content: center és az align-items: center tulajdonságok középre igazítják 
+a tartalmat mindkét tengelyen. 
+A background: none tulajdonság átlátszó háttérre állítja be a gombot. 
+A width: 19px tulajdonság 19px szélességet határoz meg. 
+A height: 19px tulajdonság 19px magasságot határoz meg. 
+A border: none tulajdonság eltávolítja a gomb keretét. 
+A border-radius: 50% tulajdonság egy 50% sugarú lekerekítést határoz meg. */
 .error-close-button {
     display: flex;
     justify-content: center;
@@ -27,12 +52,22 @@
     border-radius: 50%;
 }
 
+/* .error-close-button:hover - Ez az osztály definiálja az .error-close-button 
+gomb hover állapotában lévő stílusát. 
+A background: #ff4d4d tulajdonság vörös háttérszínt állít be a gombnak. 
+A box-shadow: 0px 0px 25px #888 tulajdonság egy árnyékot hoz létre a gomb körül. 
+A border: none tulajdonság eltávolítja a gomb keretét. */
 .error-close-button:hover {
     background: #ff4d4d;
     box-shadow: 0px 0px 25px #888;
     border: none;
 }
 
+/* .error-closebutton-container - Ez az osztály definiálja a bezáró gomb konténer stílusát. 
+A width: 80% tulajdonság 80% szélességet határoz meg. 
+A display: flex tulajdonság flexbox elrendezést használ. 
+A justify-content: right tulajdonság a tartalmat a jobb oldalra igazítja. 
+A align-items: center tulajdonság középre igazítja a tartalmat az Y tengelyen. */
 .error-closebutton-container {
     width: 80%;
     display: flex;
@@ -40,6 +75,10 @@
     align-items: center;
 }
 
+/* .error-text - Az .error-text osztály definiálja a szöveg stílusát. 
+A margin: 0 tulajdonság eltávolítja a margót a szöveg körül. 
+A font-size: 20px tulajdonság 20px-es betűméretet határoz meg. 
+A font-weight: bold tulajdonság félkövér stílust állít be a szövegre. */
 .error-text {
     margin: 0;
     font-size: 20px;

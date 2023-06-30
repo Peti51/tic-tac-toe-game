@@ -1,26 +1,55 @@
-h1 {
-    color: white;
+  /*.login-form - A .login-form osztály definiálja a bejelentkező űrlap stílusát. 
+  A border: none tulajdonság eltávolítja a keretet. 
+  A display: flex tulajdonság flexbox elrendezést használ. 
+  A flex-direction: column tulajdonság oszlop irányú elrendezést határoz meg.
+  Az align-items: center tulajdonság középre igazítja a tartalmat. 
+  A width: 100% tulajdonság teljes szélességet határoz meg.  */
+  .login-form{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
-  
+
+  /* .auth-form-container - Az .auth-form-container osztály definiálja 
+  az autentikációs űrlap konténer stílusát. 
+  A display: flex tulajdonság flexbox elrendezést használ. 
+  A flex-direction: column tulajdonság oszlop irányú elrendezést határoz meg. 
+  Az align-items: center tulajdonság középre igazítja a tartalmat. 
+  A width: 400px tulajdonság 400px szélességet határoz meg. 
+  A padding: 50px tulajdonság 50px belső margót állít be. 
+  A border-radius: 10px tulajdonság egy 10px sugarú lekerekítést határoz meg. */
   .auth-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
     padding: 50px;
+    border-radius: 10px;
   }
   
-  .login-form{
-    border: none;
-    width: 100%;
-  }
-  
+  /* .form-label - Az .form-label osztály definiálja az űrlap címke stílusát. 
+  A text-align: left tulajdonság balra igazítja a szöveget. 
+  A width: 100% tulajdonság teljes szélességet határoz meg. 
+  A padding: 0.25rem 0 tulajdonság 0.25em paddinget állít be a felső és alsó margóhoz. */
   .form-label {
     text-align: left;
     width: 100%;
     padding: 0.25rem 0;
   }
   
+  /* .form-input - Az .form-input osztály definiálja az űrlap bemenet stílusát. 
+  A margin: 0.5rem 0 tulajdonság 0.5em margót állít be a felső és alsó részen. 
+  A height: 50px tulajdonság 50px magasságot határoz meg. 
+  A width: 100% tulajdonság teljes szélességet határoz meg. ű
+  A font-size: 25px tulajdonság 25px-es betűméretet határoz meg. 
+  A border: none tulajdonság eltávolítja a keretet. 
+  A border-bottom: 3px solid white tulajdonság egy 3px vastag, fehér aláhúzást határoz meg. 
+  A color: white tulajdonság fehér szövegszínt állít be. 
+  A font-weight: 400 tulajdonság normál vastagságot határoz meg. 
+  A background: none tulajdonság átlátszó háttérszínt állít be. 
+  A border-radius: 0 tulajdonság eltávolítja a lekerekítést. */
   .form-input {
     margin: 0.5rem 0;
     height: 50px;
@@ -34,10 +63,23 @@ h1 {
     border-radius: 0;
   } 
 
+  /* .form-input::placeholder - Az .form-input osztályban ű
+  lévő helykitöltő szöveg stílusát definiálja. 
+  A color: white tulajdonság fehér szövegszínt állít be. */
   .form-input::placeholder {
     color: white;
   }
 
+  /* .form-box - Az .form-box osztály definiálja az űrlap doboz stílusát. 
+  A width: 400px tulajdonság 400px szélességet határoz meg. 
+  A height: 450px tulajdonság 450px magasságot határoz meg. 
+  A backdrop-filter: blur(15px) tulajdonság 15px-es elmosást hoz létre. 
+  A border: 2px solid rgba(255, 255, 255, 0.5) 
+  tulajdonság egy 2px vastag, 50%-os átlátszóságú fehér szegélyt határoz meg. 
+  A border-radius: 20px tulajdonság egy 20px sugarú lekerekítést határoz meg. 
+  A display: flex tulajdonság flexbox elrendezést használ. 
+  A justify-content: center tulajdonság középre igazítja a tartalmat. 
+  Az align-items: center tulajdonság középre igazítja a tartalmat. */
   .form-box {
     width: 400px;
     height: 450px;
@@ -49,12 +91,22 @@ h1 {
     align-items: center;
   }
 
+  /* .login-title - A .login-title osztály definiálja a bejelentkezési űrlap címének stílusát.
+  A font-size: 2em tulajdonság 2em-es betűméretet határoz meg. 
+  A color: white tulajdonság fehér szövegszínt állít be. 
+  A text-align: center tulajdonság középre igazítja a szöveget. */
   .login-title {
     font-size: 2em;
     color: white;
     text-align: center;
   }
 
+  /* .inputbox - Az .inputbox osztály definiálja az input doboz stílusát. 
+  A margin: 30px 0 tulajdonság 30px margót állít be a felső és alsó részen. 
+  A width: 310px tulajdonság 310px szélességet határoz meg. 
+  A border-bottom: 3px solid #fff tulajdonság egy 3px vastag, fehér aláhúzást határoz meg. 
+  A transition: border-bottom 300ms ease-in, transform 300ms ease-in tulajdonság 
+  animációt határoz meg a border-bottom és transform tulajdonságokra. */
   .inputbox {
     margin: 30px 0;
     width: 310px;
@@ -62,6 +114,12 @@ h1 {
     transition: border-bottom 300ms ease-in, transform 300ms ease-in;
   }
 
+  /* .inputbox label - Az .inputbox osztályban lévő címke stílusát definiálja. 
+  A top: 50% tulajdonság 50%-ra igazítja a felső részt. 
+  A left: 5px tulajdonság 5px-re igazítja a bal oldalt. 
+  A color: #fff tulajdonság fehér szövegszínt állít be. 
+  A font-size: 1em tulajdonság 1em-es betűméretet határoz meg. 
+  A pointer-events: none tulajdonság kikapcsolja az eseménykezelést. */
   .inputbox label {
     top: 50%;
     left: 5px;
@@ -70,11 +128,23 @@ h1 {
     pointer-events: none;
   }
 
+  /* .inputbox:hover - Az .inputbox osztály hover állapotában megjelenő stílusát definiálja. 
+  A border-bottom: 3px solid #9999ff tulajdonság egy 3px vastag, világoskék 
+  aláhúzást határoz meg. 
+  A transform: scale(1.1) tulajdonság 1.1-szeres méretezést hajt végre. */
   .inputbox:hover {
     border-bottom: 3px solid #9999ff;
     transform: scale(1.1);
   }
 
+  /* .inputbox input - Az .inputbox osztályban lévő input mező stílusát definiálja. 
+  A width: 100% tulajdonság teljes szélességet határoz meg. 
+  A height: 35px tulajdonság 35px magasságot határoz meg. 
+  A background: transparent tulajdonság átlátszó háttérszínt állít be. 
+  A border: none tulajdonság eltávolítja a keretet. 
+  Az outline: none tulajdonság eltávolítja az outline-ot. 
+  A font-size: 1em tulajdonság 1em-es betűméretet határoz meg. 
+  A color: #fff tulajdonság fehér szövegszínt állít be. */
   .inputbox input {
     width: 100%;
     height: 35px;
@@ -85,6 +155,10 @@ h1 {
     color: #fff;
   }
 
+  /* .submit-button:hover - Az .submit-button osztály hover állapotában megjelenő 
+  stílusát definiálja. A box-shadow: 0px 0px 25px #888 tulajdonság árnyékot hoz létre. 
+  A color: black tulajdonság fekete szövegszínt állít be. 
+  A background-color: white tulajdonság fehér háttérszínt állít be. */
   .submit-button {
   width: 200px;
   height: 35px;
@@ -104,6 +178,13 @@ h1 {
   background-color: white;
 }
 
+/* @media (max-width: 430px) - Ez a media query az alacsonyabb készülékfelbontásokra 
+vonatkozik. Az itt megadott stílusok csak akkor érvényesülnek, 
+ha a készülék szélessége nem haladja meg a 430px-et. 
+Az alábbiakban a válaszadó felületnek a kisebb képernyőkhöz való alkalmazkodásához 
+külön stílusokat határoz meg. A .auth-form-container, .form-box, 
+.login-form és .inputbox osztályokra új stílusokat definiál, 
+amelyek a konténerek és az input dobozok szélességét és margóját módosítják. */
 @media (max-width: 430px) {
   .auth-form-container {
     max-width: 75%;
