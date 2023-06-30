@@ -1,291 +1,285 @@
-/* .settings - Az osztály definiálja a beállítások tartalmának elrendezését. 
-A width tulajdonság 100%-ra van állítva, ami teljes szélességet jelent. 
-A display tulajdonság flex értékkel kombinálva a tartalmat flexbox módban rendezi, 
-a flex-direction: column pedig függőleges irányba helyezi a tartalmat. 
-A justify-content: center és az align-items: center tulajdonságok segítségével 
-középre igazítja a tartalmat mindkét tengelyen. */
+/*  .settings - The class defines the layout of the settings content.
+The width property is set to 100%, which means full width.
+The display property combined with the flex value arranges the content in flexbox mode,
+and the flex-direction: column places the content in a vertical direction.
+The justify-content: center and align-items: center properties 
+align the content in the center on both axes. */
 .settings {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .setting-container - Ez az osztály a beállítások konténerét definiálja. 
-A display: flex tulajdonság flexbox elrendezést használ, 
-a flex-direction: column pedig függőleges irányban helyezi a tartalmat. 
-Az align-items: center tulajdonság középre igazítja az elemeket a függőleges tengelyen. 
-A width tulajdonság 700px szélességet határoz meg, 
-a padding tulajdonság pedig 50px belső térközt ad a konténernek. */
+/* .setting-container - This class defines the container for the settings.
+The display: flex property uses flexbox layout,
+and the flex-direction: column places the content in a vertical direction.
+The align-items: center property aligns the elements in the center on the vertical axis.
+The width property defines a width of 700px,
+and the padding property adds 50px of inner spacing to the container. */
 .setting-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 700px;
-    padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  padding: 50px;
 }
 
-/* .setting-smaller-container - Ez az osztály egy kisebb konténert definiál a beállításokhoz. 
-A width tulajdonság 700px szélességet állít be. 
-A backdrop-filter: blur(15px) tulajdonság elmosódott hatást ad a háttérnek. 
-A border tulajdonság egy 2px vastag, fehér alfa csatornával rendelkező szegélyt hoz létre. 
-A border-radius: 20px tulajdonság egy 20px sugarú lekerekítést ad a konténernek. 
-A display: flex tulajdonság flexbox elrendezést használ, 
-a flex-direction: column pedig függőleges irányban helyezi a tartalmat. 
-A justify-content: center és az align-items: center tulajdonságok középre igazítják 
-az elemeket mindkét tengelyen. */
+/*  .setting-smaller-container - This class defines a smaller container for the settings.
+The width property sets a width of 700px.
+The backdrop-filter: blur(15px) property adds a blurred effect to the background.
+The border property creates a 2px thick border with a white alpha channel.
+The border-radius: 20px property adds a 20px rounded corner to the container.
+The display: flex property uses flexbox layout,
+and the flex-direction: column places the content in a vertical direction.
+The justify-content: center and align-items: center properties align the elements 
+in the center on both axes. */
 .setting-smaller-container {
-    width: 700px;
-    backdrop-filter: blur(15px);
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 700px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .setting-box - Ez az osztály definiálja a beállításokat tartalmazó dobozt. 
-A height tulajdonság 400px magasságot határoz meg. 
-A width tulajdonság 100%-ra van állítva, így a tartalom teljes szélességet foglal. 
-A display: flex tulajdonság és a justify-content: space-evenly érték az 
-elemeket egyenletesen helyezi el a vízszintes tengelyen. 
-Az align-items: center tulajdonság középre igazítja az elemeket a függőleges tengelyen. */
+/* .setting-box - This class defines the box containing the settings.
+The height property determines a height of 400px.
+The width property is set to 100%, so the content occupies the full width.
+The display: flex property and the justify-content: space-evenly value evenly position the elements on the horizontal axis.
+The align-items: center property aligns the elements in the center on the vertical axis. */
 .setting-box {
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-/* .setting-player-container - Ez az osztály definiálja a 
-játékos beállításait tartalmazó konténert. 
-A display: flex tulajdonság flexbox elrendezést használ, 
-a flex-direction: column pedig függőleges irányban helyezi a tartalmat. 
-A border tulajdonság egy 2px vastag, fehér alfa csatornával rendelkező szegélyt hoz létre. 
-A padding tulajdonság 35px belső térközt ad a konténernek. 
-A height tulajdonság 250px magasságot határoz meg. 
-A border-radius: 20px tulajdonság egy 20px sugarú lekerekítést ad a konténernek. */
+/* .setting-player-container - This class defines the container for player settings.
+The display: flex property uses flexbox layout,
+and the flex-direction: column places the content in a vertical direction.
+The border property creates a 2px thick border with a white alpha channel.
+The padding property adds 35px of inner spacing to the container.
+The height property determines a height of 250px.
+The border-radius: 20px property adds a 20px rounded corner to the container. */
 .setting-player-container {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    padding: 35px;
-    height: 250px;
-    border-radius: 20px;
-    border: 2px solid rgba(255,255,255,0.5);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 35px;
+  height: 250px;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* .setting-color-picker - Ez az osztály definiálja a színválasztó elemet. 
-A margin-top tulajdonság 15px margót ad a felső részhez. */
+/*  .setting-color-picker - This class defines the color picker element.
+The margin-top property adds 15px of margin to the top section. */
 .setting-color-picker {
-    margin-top: 15px;
-
+  margin-top: 15px;
 }
 
-/* .setting-player-name - Ez az osztály definiálja a játékos nevének beviteli mezőjét. 
-A height tulajdonság 40px magasságot határoz meg. 
-A border tulajdonság nélküli állapotban a mező nincs körülhatárolva, 
-de a border-radius: 20px tulajdonság egy 20px sugarú lekerekítést ad hozzá. 
-A margin-top tulajdonság 10px margót ad a felső részhez. */
+/* .setting-player-name - This class defines the input field for the player's name.
+The height property sets a height of 40px.
+In the state without the border property, the field is not bordered,
+but the border-radius: 20px property adds a 20px radius rounding.
+The margin-top property adds a 10px margin to the top part.*/
 .setting-player-name {
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 10px;
 }
 
 .setting-player-name:hover {
-    box-shadow: 0px 0px 25px #888;
-    color: black;
-    background-color: white;
+  box-shadow: 0px 0px 25px #888;
+  color: black;
+  background-color: white;
 }
 
-/* .setting-title - Ez az osztály definiálja a beállítások címét. 
-A color tulajdonság fehér színt állít be. */
+/* .setting-title - This class defines the title of the settings.
+The color property sets the color to white. */
 .setting-title {
-    color: white;
+  color: white;
 }
 
-/* .color-item - Ez az osztály definiálja a színválasztó elemeket. 
-A width tulajdonság 15px szélességet határoz meg. 
-A height tulajdonság 15px magasságot határoz meg. 
-A background-color tulajdonság az --bg-color változóra van állítva, 
-amely egy háttérszínt határoz meg. */
+/* .color-item - This class defines the color picker items.
+The width property sets a width of 15px.
+The height property sets a height of 15px.
+The background-color property is set to the --bg-color variable,
+which determines a background color. */
 .color-item {
-    width: 15px;
-    height: 15px;
-    background-color: var(--bg-color);
+  width: 15px;
+  height: 15px;
+  background-color: var(--bg-color);
 }
 
-/* .back-arrow - Ez az osztály definiálja a visszafelé nyilat. 
-A width tulajdonság 60px szélességet határoz meg. 
-A height tulajdonság 80px magasságot határoz meg. 
-A background-color tulajdonság fehér színt állít be. 
-Az elemet 270 fokkal elforgatja a transform: rotate(270deg) tulajdonság. 
-A display: flex, a justify-content: center és az 
-align-items: center tulajdonságok középre igazítják a tartalmat. 
-A border tulajdonság egy 3px vastag, fehér szegélyt ad a nyílnak. 
-A border-radius: 10px tulajdonság egy 10px sugarú lekerekítést határoz meg. 
-A font-size tulajdonság 25px-es betűméretet állít be. 
-A color tulajdonság fekete színt állít be. 
-A text-decoration tulajdonság nincs beállítva. */
+/* .back-arrow - This class defines the back arrow.
+The width property sets a width of 60px.
+The height property sets a height of 80px.
+The background-color property sets the color to white.
+The element is rotated 270 degrees using the transform: rotate(270deg) property.
+The display: flex, justify-content: center, and align-items: center properties align the content to the center.
+The border property adds a 3px thick white border to the arrow.
+The border-radius: 10px property sets a 10px border radius.
+The font-size property sets a font size of 25px.
+The color property sets the color to black.
+The text-decoration property is not set. */
 .back-arrow {
-    width: 60px;
-    height: 80px;
-    background-color: white;
-    rotate: 270deg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
+  width: 60px;
+  height: 80px;
+  background-color: white;
+  rotate: 270deg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
 }
 
 .back-arrow:hover {
-    box-shadow: 0px 0px 25px #888;
+  box-shadow: 0px 0px 25px #888;
 }
 
-/* .back-arrow-container - Ez az osztály definiálja a vissza nyíl tartályát. 
-A width tulajdonság 78%-ra van állítva, ami a tartály szélességét határozza meg. 
-A display: flex tulajdonság flexbox elrendezést használ, 
-a justify-content: space-between pedig az elemeket egyenletesen helyezi el 
-a vízszintes tengelyen. A align-items: center tulajdonság középre 
-igazítja az elemeket a függőleges tengelyen. 
-A margin-top tulajdonság 20px margót ad a felső részhez. */
+/* .back-arrow-container - This class defines the container for the back arrow.
+The width property is set to 78%, which determines the width of the container.
+The display: flex property uses flexbox layout.
+The justify-content: space-between property evenly places the elements on the horizontal axis.
+The align-items: center property aligns the elements to the center on the vertical axis.
+The margin-top property adds a 20px margin to the top part. */
 .back-arrow-container {
-    width: 78%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
-/* .reset - Ez az osztály definiálja a visszaállítás gombot. 
-A width tulajdonság 80px szélességet határoz meg. 
-A height tulajdonság 60px magasságot határoz meg. 
-A background-color tulajdonság fehér színt állít be. 
-A display: flex, a justify-content: center és az 
-align-items: center tulajdonságok középre igazítják a tartalmat. 
-A border tulajdonság egy 3px vastag, fehér szegélyt ad a gombnak. 
-A border-radius: 10px tulajdonság egy 10px sugarú lekerekítést határoz meg. 
-A font-size tulajdonság 25px-es betűméretet állít be. 
-A color tulajdonság fekete színt állít be. 
-A text-decoration tulajdonság nincs beállítva. */
+/* .reset - This class defines the reset button.
+The width property sets a width of 80px.
+The height property sets a height of 60px.
+The background-color property sets the color to white.
+The display: flex, justify-content: center, and align-items: center properties align the content to the center.
+The border property adds a 3px thick white border to the button.
+The border-radius: 10px property sets a 10px border radius.
+The font-size property sets a font size of 25px.
+The color property sets the color to black.
+The text-decoration property is not set. */
 .reset {
-    width: 80px;
-    height: 60px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
+  width: 80px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
 }
 
 .reset:hover {
-    box-shadow: 0px 0px 25px #888;
+  box-shadow: 0px 0px 25px #888;
 }
 
-/* .setting-colors - Ez az osztály definiálja a beállítás színét. 
-A width tulajdonság 10px szélességet határoz meg. 
-A height tulajdonság 10px magasságot határoz meg. 
-A border-radius: 50% tulajdonság egy kör alakú megjelenést ad az elemnek. */
+/* .setting-colors - This class defines the color of the setting.
+The width property sets a width of 10px.
+The height property sets a height of 10px.
+The border-radius: 50% property gives the element a circular appearance. */
 .setting-colors {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-/* .setting-drop-down - Ez az osztály definiálja a lenyíló menüt a beállításokhoz. 
-A position: relative tulajdonság relatív pozícióban helyezi el az elemet. 
-A width tulajdonság 200px szélességet határoz meg. 
-A height tulajdonság 40px magasságot határoz meg. 
-A background-color tulajdonság átlátszóra van állítva. 
-A margin-bottom tulajdonság 15px margót ad az alsó részhez. 
-A border tulajdonság egy 2px vastag, szürke szegélyt hoz létre. 
-A border-radius: 5px tulajdonság egy 5px sugarú lekerekítést határoz meg. */
+/* .setting-drop-down - This class defines the dropdown menu for the settings.
+The position: relative property positions the element in a relative position.
+The width property sets a width of 200px.
+The height property sets a height of 40px.
+The background-color property is set to transparent.
+The margin-bottom property adds a 15px margin to the bottom part.
+The border property creates a 2px thick gray border.
+The border-radius: 5px property sets a 5px border radius. */
 .setting-drop-down {
-    position: relative;
-    width: 200px;
-    height: 40px;
-    background-color: transparent;
-    margin-bottom: 15px;
-    border: none;
-    border: 2px solid #ccc;
-    font-size: 16px;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  margin-bottom: 15px;
+  border: none;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .setting-drop-down:hover {
-    box-shadow: 0px 0px 25px #888;
+  box-shadow: 0px 0px 25px #888;
 }
 
 .setting-drop-down::after {
-    content: "\f0d7";
-    font-family: FontAwesome;
-    font-size: 12px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
+  content: "\f0d7";
+  font-family: FontAwesome;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .setting-drop-down:focus {
-    outline: none;
-    border: 4px solid #0066ff;
+  outline: none;
+  border: 4px solid #0066ff;
 }
 
 .setting-drop-down option {
-    background-color: #fff;
-    color: #333;
+  background-color: #fff;
+  color: #333;
 }
 
 .setting-drop-down option:checked {
-    background-color: #0066ff;
-    color: #fff;
+  background-color: #0066ff;
+  color: #fff;
 }
 
 @media (max-width: 820px) {
-    .back-arrow-container {
-        display: flex;
-        flex-direction: column;
-    }
+  .back-arrow-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .setting-box {
-        display: flex;
-        flex-direction: column;
-        height: unset;
-        margin-top: 20px;
-    }
+  .setting-box {
+    display: flex;
+    flex-direction: column;
+    height: unset;
+    margin-top: 20px;
+  }
 
-    .setting-player-container {
-        margin-bottom: 20px;
-    }
+  .setting-player-container {
+    margin-bottom: 20px;
+  }
 
-    .setting-smaller-container {
-        width: 100%;
-    }
+  .setting-smaller-container {
+    width: 100%;
+  }
 
-    .setting-container {
-        width: 80%;
-    }
+  .setting-container {
+    width: 80%;
+  }
 }
 

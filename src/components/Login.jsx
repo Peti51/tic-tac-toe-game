@@ -5,8 +5,8 @@ import { AnimatedPage } from "./AnimatedPage";
 import myImage from '../images/cross-round-svgrepo-com.svg';
 import { Navigate } from 'react-router-dom';
 
-// A Login komponens exportálása, hogy más fájlokban is használható legyen.
-// A komponens props-okat kap, mint például currentPassword, currentUserName.
+// Exporting the Login component to be used in other files.
+// The component receives props such as currentPassword and currentUserName.
 export const Login = ({
   currentPassword,
   currentUserName,
@@ -18,34 +18,34 @@ export const Login = ({
   const [isPasswordFocused, setIsPasswordFocused] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // Az handleFocusUserName függvény, amely beállítja az isfocusedUserName állapotot true-ra,
-  // amikor a felhasználónév mező fókuszba kerül.
+  // The handleFocusUserName function sets the isfocusedUserName state to true
+  // when the username field is focused.
   const handleFocusUserName = () => {
     setIsFocusedUserName(true);
   };
 
-  // Az handleBlurUserName függvény, amely beállítja az isfocusedUserName állapotot false-ra,
-  // amikor a felhasználónév mező elveszíti a fókuszt.
+  // The handleBlurUserName function sets the isfocusedUserName state to false
+  // when the username field loses focus.
   const handleBlurUserName = () => {
     setIsFocusedUserName(false);
   };
 
-  // Az handleFocusPassword függvény, amely beállítja az isPasswordFocused állapotot true-ra,
-  // amikor a jelszó mező fókuszba kerül.
+  // The handleFocusPassword function sets the isPasswordFocused state to true
+  // when the password field is focused.
   const handleFocusPassword = () => {
     setIsPasswordFocused(true);
   };
 
-  // Az handleBlurPassword függvény, amely beállítja az isPasswordFocused állapotot false-ra,
-  // amikor a jelszó mező elveszíti a fókuszt.
+  // The handleBlurPassword function sets the isPasswordFocused state to false
+  // when the password field loses focus.
   const handleBlurPassword = () => {
     setIsPasswordFocused(false);
   };
 
 
-  // Az handleSubmit függvény, amely az űrlap benyújtásának eseménykezelője. 
-  // Ellenőrzi a bejelentkezési adatok helyességét, 
-  // és beállítja az isLoggedIn és isLoginFailed állapotokat ennek megfelelően.
+  // The handleSubmit function is the event handler for form submission.
+  // It checks the correctness of the login credentials
+  // and sets the isLoggedIn and isLoginFailed states accordingly.
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -57,8 +57,8 @@ export const Login = ({
     }
   };
 
-  // Ha a felhasználó bejelentkezett (isLoggedIn értéke true),
-  // akkor átirányítás történik a "/menu" útvonalra a Navigate komponens segítségével.
+  // If the user is logged in (isLoggedIn is true),
+  // a redirection to the "/menu" route is performed using the Navigate component.
   if (isLoggedIn) {
     return <Navigate to="/menu" />;
   }
@@ -133,8 +133,8 @@ export const Login = ({
   );
 };
 
-// A Login komponens a bejelentkező űrlapot reprezentálja,
-// ahol a felhasználó megadhatja a felhasználónevet és a jelszót.
-// A bejelentkezési adatok helyességét ellenőrzi,
-// és az eredménytől függően megjeleníti a sikertelen bejelentkezési hibaüzenetet vagy
-// átirányítást hajt végre a "/menu" útvonalra.
+// The Login component represents the login form
+// where the user can enter their username and password.
+// It checks the correctness of the login credentials
+// and displays the unsuccessful login error message or
+// performs a redirection to the "/menu" route depending on the result.

@@ -1,6 +1,6 @@
-// A NotFoundPage komponens exportálása, hogy más fájlokban is használható legyen.
-// Ez a komponens egy oldalt reprezentál, amelyet a 404-es hibakódhoz kapcsolunk,
-// amikor is a kért oldal nem található.
+// Exporting the NotFoundPage component to be used in other files.
+// This component represents a page associated with the 404 error code,
+// which is displayed when the requested page is not found.
 export const NotFoundPage = () => {
   return (
     <main className="section">
@@ -11,5 +11,5 @@ export const NotFoundPage = () => {
   );
 };
 
-// A NotFoundPage komponens egy egyszerű oldalt jelenít meg a "Page not found" szöveggel. 
-// Ez a komponens akkor jelenik meg, ha a kért oldal nem található.
+// The NotFoundPage component displays a simple page with the text "Page not found".
+// This component is displayed when the requested page is not found.

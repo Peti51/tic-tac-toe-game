@@ -1,130 +1,128 @@
 
-/* .popup: Ez az osztály egy popup elemet jelöl,
-amely egy felugró ablakot reprezentál. 
-A stílusok beállítják a pozíciót (position: fixed; top: 0; left: 0;),
-a méreteket (width: 100%; height: 100vh;),
-a háttérszínt (background-color: rgba(0, 0, 0, 0.2);),
-a tájolást középre (display: flex; justify-content: center; align-items: center;). */
+/* .popup: This class represents a popup element, which represents a modal window.
+The styles set the position (position: fixed; top: 0; left: 0;),
+dimensions (width: 100%; height: 100vh;),
+background color (background-color: rgba(0, 0, 0, 0.2);),
+center alignment (display: flex; justify-content: center; align-items: center;). */
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .popup-inner: Ez az osztály egy belső tartalmi elemet jelöl a popupban. 
-A stílusok beállítják a tartalom elrendezését (display: flex; 
-flex-direction: column; justify-content: center; align-items: center;), 
-a pozíciót (position: relative;), a belső margót (padding: 32px;), 
-a szélességet (width: 100%;), a maximális szélességet (max-width: 640px;), 
-a háttérszínt (background-color: whitesmoke;),
-a határokat (border-radius: 10px;), és a doboz árnyékát (box-shadow: 0px 0px 25px #888;). */
+/* .popup-inner: This class represents an inner content element within the popup.
+The styles set the content layout (display: flex; flex-direction: column; 
+justify-content: center; align-items: center;),
+position (position: relative;), inner padding (padding: 32px;),
+width (width: 100%;), maximum width (max-width: 640px;),
+background color (background-color: whitesmoke;), borders (border-radius: 10px;),
+and box shadow (box-shadow: 0px 0px 25px #888;). */
 .popup-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 32px;
-    width:  100%;
-    max-width: 640px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 0px 0px 25px #888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 32px;
+  width:  100%;
+  max-width: 640px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px #888;
 }
 
-/* .popup-inner .close-btn: Ez az osztály egy gomb elemet jelöl a popupban,
-amelyet a bezárásra használhatunk.
-A stílusok beállítják a pozíciót (position: absolute; top: 16px; right: 16px;). */
+/* .popup-inner .close-btn: This class represents a button element within the popup
+that can be used for closing.
+The styles set the position (position: absolute; top: 16px; right: 16px;). */
 .popup-inner .close-btn {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
-/* .close-button: Ez az osztály egy bezárás gombot jelöl a popupban. 
-A stílusok beállítják a gomb méretét (width: 300px; height: 55px;), 
-a háttérszínt (background: #9999ff;), a tájolást középre (display: flex; 
-justify-content: center; align-items: center;), a szegélyt (border: 3px solid white;), 
-a határokat (border-radius: 10px;), 
-a betűméretet (font-size: 25px;), és a szövegszínt (color: white;). */
+/* .close-button: This class represents a close button within the popup.
+The styles set the button size (width: 300px; height: 55px;),
+background color (background: #9999ff;), center alignment (display: flex; 
+justify-content: center; align-items: center;),
+border (border: 3px solid white;), borders radius (border-radius: 10px;),
+font size (font-size: 25px;), and text color (color: white;). */
 .close-button {
-    width: 300px;
-    height: 55px;
-    background: #9999ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    font-size: 25px;
-    color: white;
+  width: 300px;
+  height: 55px;
+  background: #9999ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
 }
 
-/* .close-button:hover: Ez az osztály a bezárás gomb hover állapotát jelöli. 
-A stílusok beállítják a doboz árnyékát (box-shadow: 0px 0px 25px #888;), 
-a szövegszínt (color: black;) és a háttérszínt (background-color: white;). */
+/* .close-button:hover: This class represents the hover state of the close button.
+The styles set the box shadow (box-shadow: 0px 0px 25px #888;),
+text color (color: black;), and background color (background-color: white;). */
 .close-button:hover {
-    box-shadow: 0px 0px 25px #888;
-    color: black;
-    background-color: white;
+  box-shadow: 0px 0px 25px #888;
+  color: black;
+  background-color: white;
 }
 
 /* .popup-close-button-image: Ez az osztály egy kép elemet jelöl a bezárás gombon. 
 A stílusok beállítják a kép méretét (width: 40px; height: 40px;). */
 .popup-close-button-image {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
-/* .popup-close-button: Ez az osztály a bezárás gombot jelöli a popupban. 
-A stílusok beállítják a tájolást középre (display: flex; justify-content: center; 
-align-items: center;), a háttérszínt (background: none;), 
-a méretet (width: 39px; height: 39px;), a szegélyt (border: none;), 
-és a határokat (border-radius: 50%;). */
+/* .popup-close-button: This class represents the close button within the popup.
+The styles set center alignment (display: flex; justify-content: center; align-items: center;),
+background color (background: none;), size (width: 39px; height: 39px;),
+border (border: none;), and border radius (border-radius: 50%;). */
 .popup-close-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    width: 39px;
-    height: 39px;
-    border: none;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 39px;
+  height: 39px;
+  border: none;
+  border-radius: 50%;
 }
 
-/* .popup-close-button:hover: Ez az osztály a bezárás gomb hover állapotát jelöli. 
-A stílusok beállítják a háttérszínt (background: #ff4d4d;), 
-a doboz árnyékát (box-shadow: 0px 0px 25px #888;), és a szegélyt (border: none;). */
+/* .popup-close-button:hover: This class represents the hover state of the close button.
+The styles set the background color (background: #ff4d4d;),
+box shadow (box-shadow: 0px 0px 25px #888;), and border (border: none;). */
 .popup-close-button:hover {
-    background: #ff4d4d;
-    box-shadow: 0px 0px 25px #888;
-    border: none;
+  background: #ff4d4d;
+  box-shadow: 0px 0px 25px #888;
+  border: none;
 }
 
-/* .popup-closebutton-container: Ez az osztály egy konténert jelöl a bezárás gombhoz. 
-A stílusok beállítják a szélességet (width: 80%;), 
-és a tájolást jobbra (justify-content: right;). */
+/* .popup-closebutton-container: This class represents a container for the close button.
+The styles set the width (width: 80%;),
+and right alignment (justify-content: right;). */
 .popup-closebutton-container {
-    width: 80%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+  width: 80%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
-/* .popup-winner-text: Ez az osztály a nyertes szöveget jelöli a popupban. 
-A stílusok beállítják a betűméretet (font-size: 20px;). */
+/* .popup-winner-text: This class represents the winner text within the popup.
+The styles set the font size (font-size: 20px;). */
 .popup-winner-text {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-/* .popup-title-text: Ez az osztály a címszöveget jelöli a popupban. 
-A stílusok beállítják a betűméretet (font-size: 40px;). */
+/* .popup-title-text: This class represents the title text within the popup.
+The styles set the font size (font-size: 40px;). */
 .popup-title-text {
-    font-size: 40px;
+  font-size: 40px;
 }

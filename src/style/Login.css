@@ -1,165 +1,135 @@
-  /*.login-form - A .login-form osztály definiálja a bejelentkező űrlap stílusát. 
-  A border: none tulajdonság eltávolítja a keretet. 
-  A display: flex tulajdonság flexbox elrendezést használ. 
-  A flex-direction: column tulajdonság oszlop irányú elrendezést határoz meg.
-  Az align-items: center tulajdonság középre igazítja a tartalmat. 
-  A width: 100% tulajdonság teljes szélességet határoz meg.  */
-  .login-form{
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+/*.login-form: This class defines the style for the login form. 
+It removes the border, uses flexbox for layout with a column direction, 
+centers the content, and sets the width to 100%. */
+.login-form{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-  /* .auth-form-container - Az .auth-form-container osztály definiálja 
-  az autentikációs űrlap konténer stílusát. 
-  A display: flex tulajdonság flexbox elrendezést használ. 
-  A flex-direction: column tulajdonság oszlop irányú elrendezést határoz meg. 
-  Az align-items: center tulajdonság középre igazítja a tartalmat. 
-  A width: 400px tulajdonság 400px szélességet határoz meg. 
-  A padding: 50px tulajdonság 50px belső margót állít be. 
-  A border-radius: 10px tulajdonság egy 10px sugarú lekerekítést határoz meg. */
-  .auth-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    padding: 50px;
-    border-radius: 10px;
-  }
-  
-  /* .form-label - Az .form-label osztály definiálja az űrlap címke stílusát. 
-  A text-align: left tulajdonság balra igazítja a szöveget. 
-  A width: 100% tulajdonság teljes szélességet határoz meg. 
-  A padding: 0.25rem 0 tulajdonság 0.25em paddinget állít be a felső és alsó margóhoz. */
-  .form-label {
-    text-align: left;
-    width: 100%;
-    padding: 0.25rem 0;
-  }
-  
-  /* .form-input - Az .form-input osztály definiálja az űrlap bemenet stílusát. 
-  A margin: 0.5rem 0 tulajdonság 0.5em margót állít be a felső és alsó részen. 
-  A height: 50px tulajdonság 50px magasságot határoz meg. 
-  A width: 100% tulajdonság teljes szélességet határoz meg. ű
-  A font-size: 25px tulajdonság 25px-es betűméretet határoz meg. 
-  A border: none tulajdonság eltávolítja a keretet. 
-  A border-bottom: 3px solid white tulajdonság egy 3px vastag, fehér aláhúzást határoz meg. 
-  A color: white tulajdonság fehér szövegszínt állít be. 
-  A font-weight: 400 tulajdonság normál vastagságot határoz meg. 
-  A background: none tulajdonság átlátszó háttérszínt állít be. 
-  A border-radius: 0 tulajdonság eltávolítja a lekerekítést. */
-  .form-input {
-    margin: 0.5rem 0;
-    height: 50px;
-    width: 100%;
-    font-size: 25px;
-    border: none;
-    border-bottom: 3px solid white;
-    color: white;
-    font-weight: 400;
-    background: none;
-    border-radius: 0;
-  } 
+/* .auth-form-container: This class defines the style for the authentication form container.
+    It uses flexbox for layout with a column direction, centers the content, 
+    sets the width to 400px, 
+    adds padding of 50px, and sets a border radius of 10px. */
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 50px;
+  border-radius: 10px;
+}
 
-  /* .form-input::placeholder - Az .form-input osztályban ű
-  lévő helykitöltő szöveg stílusát definiálja. 
-  A color: white tulajdonság fehér szövegszínt állít be. */
-  .form-input::placeholder {
-    color: white;
-  }
+/* .form-label: This class defines the style for form labels. 
+It aligns the text to the left, sets the width to 100%, 
+and adds padding of 0.25rem at the top and bottom. */
+.form-label {
+  text-align: left;
+  width: 100%;
+  padding: 0.25rem 0;
+}
 
-  /* .form-box - Az .form-box osztály definiálja az űrlap doboz stílusát. 
-  A width: 400px tulajdonság 400px szélességet határoz meg. 
-  A height: 450px tulajdonság 450px magasságot határoz meg. 
-  A backdrop-filter: blur(15px) tulajdonság 15px-es elmosást hoz létre. 
-  A border: 2px solid rgba(255, 255, 255, 0.5) 
-  tulajdonság egy 2px vastag, 50%-os átlátszóságú fehér szegélyt határoz meg. 
-  A border-radius: 20px tulajdonság egy 20px sugarú lekerekítést határoz meg. 
-  A display: flex tulajdonság flexbox elrendezést használ. 
-  A justify-content: center tulajdonság középre igazítja a tartalmat. 
-  Az align-items: center tulajdonság középre igazítja a tartalmat. */
-  .form-box {
-    width: 400px;
-    height: 450px;
-    backdrop-filter: blur(15px);
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* ..form-input: This class defines the style for form inputs. 
+It sets margins of 0.5rem at the top and bottom, a height of 50px, a width of 100%, 
+a font size of 25px, removes the border, adds a 3px white underline, 
+sets the text color to white, sets the font weight to 400, sets a transparent background, 
+and removes the border radius. */
+.form-input {
+  margin: 0.5rem 0;
+  height: 50px;
+  width: 100%;
+  font-size: 25px;
+  border: none;
+  border-bottom: 3px solid white;
+  color: white;
+  font-weight: 400;
+  background: none;
+  border-radius: 0;
+} 
 
-  /* .login-title - A .login-title osztály definiálja a bejelentkezési űrlap címének stílusát.
-  A font-size: 2em tulajdonság 2em-es betűméretet határoz meg. 
-  A color: white tulajdonság fehér szövegszínt állít be. 
-  A text-align: center tulajdonság középre igazítja a szöveget. */
-  .login-title {
-    font-size: 2em;
-    color: white;
-    text-align: center;
-  }
+/* .form-input::placeholder: This style defines the placeholder text 
+color for the input field. It sets the color to white. */
+.form-input::placeholder {
+  color: white;
+}
 
-  /* .inputbox - Az .inputbox osztály definiálja az input doboz stílusát. 
-  A margin: 30px 0 tulajdonság 30px margót állít be a felső és alsó részen. 
-  A width: 310px tulajdonság 310px szélességet határoz meg. 
-  A border-bottom: 3px solid #fff tulajdonság egy 3px vastag, fehér aláhúzást határoz meg. 
-  A transition: border-bottom 300ms ease-in, transform 300ms ease-in tulajdonság 
-  animációt határoz meg a border-bottom és transform tulajdonságokra. */
-  .inputbox {
-    margin: 30px 0;
-    width: 310px;
-    border-bottom: 3px solid #fff;
-    transition: border-bottom 300ms ease-in, transform 300ms ease-in;
-  }
+/* .form-box: This class defines the style for the form box. 
+It sets the width to 400px, height to 450px, applies a backdrop 
+filter blur effect of 15px, sets a 2px solid white border with 50% opacity, 
+sets a border radius of 20px, uses flexbox for layout with center alignment, 
+and justifies the content to the center. */
+.form-box {
+  width: 400px;
+  height: 450px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* .inputbox label - Az .inputbox osztályban lévő címke stílusát definiálja. 
-  A top: 50% tulajdonság 50%-ra igazítja a felső részt. 
-  A left: 5px tulajdonság 5px-re igazítja a bal oldalt. 
-  A color: #fff tulajdonság fehér szövegszínt állít be. 
-  A font-size: 1em tulajdonság 1em-es betűméretet határoz meg. 
-  A pointer-events: none tulajdonság kikapcsolja az eseménykezelést. */
-  .inputbox label {
-    top: 50%;
-    left: 5px;
-    color: #fff;
-    font-size: 1em;
-    pointer-events: none;
-  }
+/* .login-title: This class defines the style for the login form title. 
+It sets the font size to 2em, text color to white, and aligns the text to the center. */
+.login-title {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
 
-  /* .inputbox:hover - Az .inputbox osztály hover állapotában megjelenő stílusát definiálja. 
-  A border-bottom: 3px solid #9999ff tulajdonság egy 3px vastag, világoskék 
-  aláhúzást határoz meg. 
-  A transform: scale(1.1) tulajdonság 1.1-szeres méretezést hajt végre. */
-  .inputbox:hover {
-    border-bottom: 3px solid #9999ff;
-    transform: scale(1.1);
-  }
+/* .inputbox: This class defines the style for the input box. It sets margins of 
+30px at the top and bottom, a width of 310px, a 3px white underline, 
+and adds a transition effect for the border-bottom and transform properties. */
+.inputbox {
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 3px solid #fff;
+  transition: border-bottom 300ms ease-in, transform 300ms ease-in;
+}
 
-  /* .inputbox input - Az .inputbox osztályban lévő input mező stílusát definiálja. 
-  A width: 100% tulajdonság teljes szélességet határoz meg. 
-  A height: 35px tulajdonság 35px magasságot határoz meg. 
-  A background: transparent tulajdonság átlátszó háttérszínt állít be. 
-  A border: none tulajdonság eltávolítja a keretet. 
-  Az outline: none tulajdonság eltávolítja az outline-ot. 
-  A font-size: 1em tulajdonság 1em-es betűméretet határoz meg. 
-  A color: #fff tulajdonság fehér szövegszínt állít be. */
-  .inputbox input {
-    width: 100%;
-    height: 35px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #fff;
-  }
+/* .inputbox label - Az .inputbox osztályban lévő címke stílusát definiálja. 
+A top: 50% tulajdonság 50%-ra igazítja a felső részt. 
+A left: 5px tulajdonság 5px-re igazítja a bal oldalt. 
+A color: #fff tulajdonság fehér szövegszínt állít be. 
+A font-size: 1em tulajdonság 1em-es betűméretet határoz meg. 
+A pointer-events: none tulajdonság kikapcsolja az eseménykezelést. */
+.inputbox label {
+  top: 50%;
+  left: 5px;
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+}
 
-  /* .submit-button:hover - Az .submit-button osztály hover állapotában megjelenő 
-  stílusát definiálja. A box-shadow: 0px 0px 25px #888 tulajdonság árnyékot hoz létre. 
-  A color: black tulajdonság fekete szövegszínt állít be. 
-  A background-color: white tulajdonság fehér háttérszínt állít be. */
-  .submit-button {
+/* .inputbox label: This style defines the style for labels inside the input box. 
+It aligns the top to 50%, sets the left to 5px, 
+sets the text color to white, sets the font size to 1em, and disables pointer events. */
+.inputbox:hover {
+  border-bottom: 3px solid #9999ff;
+  transform: scale(1.1);
+}
+
+  /* .inputbox input: This style defines the style for the input field inside the input box. 
+  It sets the width to 100%, height to 35px, background to transparent, 
+  removes the border, outline, sets the font size to 1em, 
+  and sets the text color to white. */
+.inputbox input {
+  width: 100%;
+  height: 35px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+}
+
+  /* .submit-button: This class defines the style for the submit button. 
+  It sets the width to 200px, height to 35px, uses flexbox for layout with center alignment, 
+  adds a 3px white border with a border-radius of 10px, 
+  sets the font size to 25px, and sets the text color to white. */
+.submit-button {
   width: 200px;
   height: 35px;
   background: none;
@@ -172,19 +142,17 @@
   color: white;
 }
 
+/* .submit-button:hover: This style defines the hover effect for the submit button. 
+It adds a box shadow, 
+űchanges the text color to black, and sets the background color to white. */
 .submit-button:hover {
   box-shadow: 0px 0px 25px #888;
   color: black;
   background-color: white;
 }
 
-/* @media (max-width: 430px) - Ez a media query az alacsonyabb készülékfelbontásokra 
-vonatkozik. Az itt megadott stílusok csak akkor érvényesülnek, 
-ha a készülék szélessége nem haladja meg a 430px-et. 
-Az alábbiakban a válaszadó felületnek a kisebb képernyőkhöz való alkalmazkodásához 
-külön stílusokat határoz meg. A .auth-form-container, .form-box, 
-.login-form és .inputbox osztályokra új stílusokat definiál, 
-amelyek a konténerek és az input dobozok szélességét és margóját módosítják. */
+/* Media Query (max-width: 430px): Defines styles for smaller screen sizes. 
+Adjusts the width of containers and input boxes to fit smaller screens. */
 @media (max-width: 430px) {
   .auth-form-container {
     max-width: 75%;

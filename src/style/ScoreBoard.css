@@ -1,147 +1,145 @@
-/* .scoreboard: Ez az osztály egy eredménytáblát jelöl. 
-A stílusok beállítják a tartalom elrendezését 
-(display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;), 
-a szélességet (width: 300px;), a magasságot (height: 5rem;), 
-a betűméretet (font-size: 1.5em;), a háttérszínt (background-color: none;), 
-a szegélyt (border: 3px solid white;), a margót (margin: 3rem auto; margin-top: 0;), 
-a doboz árnyékát (box-shadow: 0px 0px 8px #888;), a határokat (border-radius: 0.5rem;), 
-a betű vastagságát (font-weight: bold;), és a háttérszűrőt (backdrop-filter: blur(15px); 
-border: 2px solid rgba(255,255,255,0.5);
-border-radius: 0 20px 20px;). */
+/* .scoreboard: This class represents a scoreboard. 
+The styles set the content layout (display: flex; flex-direction: column; 
+align-items: center; justify-content: space-evenly;), width (width: 300px;), 
+height (height: 5rem;), font size (font-size: 1.5em;), 
+background color (background-color: none;), border (border: 3px solid white;), 
+margin (margin: 3rem auto; margin-top: 0;), box shadow (box-shadow: 0px 0px 8px #888;), 
+border radius (border-radius: 0.5rem;), font weight (font-weight: bold;), 
+and backdrop filter (backdrop-filter: blur(15px); 
+border: 2px solid rgba(255,255,255,0.5); border-radius: 0 20px 20px;). */
 .scoreboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 5rem;
-    font-size: 1.5em;
-    background-color: none;
-    border: 3px solid white;
-    margin: 3rem auto;
-    margin-top: 0;
-    box-shadow: 0px 0px 8px #888;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    backdrop-filter: blur(15px);
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 5rem;
+  font-size: 1.5em;
+  background-color: none;
+  border: 3px solid white;
+  margin: 3rem auto;
+  margin-top: 0;
+  box-shadow: 0px 0px 8px #888;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 0 20px 20px;
 }
 
-/* .scoreboard-players: Ez az osztály a játékosokat tartalmazó részt jelöli 
-az eredménytáblán belül. A stílusok beállítják a szélességet 
-(width: 100%;), a szegélyt (border: none; border-top: 2px solid rgba(255,255,255,0.5);), 
-a magasságot (height: 70px;), a tartalom elrendezését középre 
-(display: flex; justify-content: center; align-items: center;). */
+/* .scoreboard-players: This class represents the section containing the 
+players within the scoreboard. The styles set the width (width: 100%;), 
+border (border: none; border-top: 2px solid rgba(255,255,255,0.5);), height (height: 70px;), 
+and content layout (display: flex; justify-content: center; align-items: center;). */
 .scoreboard-players {
-    width: 100%;
-    border: none;
-    border-top: 2px solid rgba(255,255,255,0.5);
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  border: none;
+  border-top: 2px solid rgba(255,255,255,0.5);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .score: Ez az osztály a pontszámokat jelöli az eredménytáblán belül. 
-A stílusok beállítják a szélességet (width: 100%;), 
-és a szöveg igazítását középre (text-align: center;). */
+/* .score: This class represents the scores within the scoreboard. 
+The styles set the width (width: 100%;) 
+and center alignment of the text (text-align: center;). */
 .score {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
-/* .x-score: Ez az osztály az "X" játékos pontszámát jelöli az eredménytáblán. 
-A stílusok beállítják a határokat (border-radius: 0.5rem 0 0 0.5rem;). */
+/* .x-score: This class represents the score of the "X" player within the scoreboard. 
+The styles set the border radius (border-radius: 0.5rem 0 0 0.5rem;). */
 .x-score {
-    border-radius: 0.5rem 0. 0 0.5rem;
+  border-radius: 0.5rem 0. 0 0.5rem;
 }
 
-/* .o-score: Ez az osztály az "O" játékos pontszámát jelöli az eredménytáblán. 
-A stílusok beállítják a határokat (border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;). */
+/* .o-score: This class represents the score of the "O" player within the scoreboard. 
+The styles set the border radius (border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;). */
 .o-score {
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-/* .inactive: Ez az osztály inaktív állapotot jelöl az eredménytáblán. 
-A stílusok beállítják az alsó szegélyt átlátszóra (border-bottom: transparent;). */
+/* .inactive: This class represents the inactive state within the scoreboard. 
+The styles set the transparent bottom border (border-bottom: transparent;). */
 .inactive {
-    border-bottom: transparent;
+  border-bottom: transparent;
 }
 
-/* .scoreboard-title: Ez az osztály a címszöveget jelöli az eredménytáblán. 
-A stílusok beállítják a szöveg színét (color: white;). */
+/* .scoreboard-title: This class represents the title text within the scoreboard. 
+The styles set the text color (color: white;). */
 .scoreboard-title {
-    color: white;
+  color: white;
 }
 
-/* .current-player: Ez az osztály az aktuális játékost jelöli az eredménytáblán. 
-A stílusok beállítják a szegélyt (border: none;). */
+/* .current-player: This class represents the current player within the scoreboard. 
+The styles remove the border (border: none;). */
 .current-player {
-    border: none;
+  border: none;
 }
 
-/* .firstPlayer-main-container: Ez az osztály az első játékos fő konténerét jelöli. 
-A stílusok beállítják a tartalom elrendezését (display: flex; 
-flex-direction: column; justify-content: left;), a szélességet (width: 300px;). */
+/* .firstPlayer-main-container: This class represents the main container of the first player. 
+The styles set the content layout (display: flex; flex-direction: column; 
+justify-content: left;) and width (width: 300px;). */
 .firstPlayer-main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 300px;
 }
 
-/* .firstplayer-current-player-text: 
-Ez az osztály az első játékos aktuális játékost jelző szövegét jelöli. 
-A stílusok beállítják a szélességet (width: 200px;), 
-a tartalom elrendezését középre (display: flex; justify-content: center;), 
-a háttérszűrőt (backdrop-filter: blur(15px); border: 2px solid rgba(255,255,255,0.5); 
-border-bottom: none; border-radius: 20px 20px 0 0;), a betűméretet (font-size: 20px;), 
-a betű vastagságát (font-weight: bold;), az átlátszóságot (opacity: 1;), 
-és az áttűnést (transition: opacity 500ms ease-in-out;). */
+/* .firstplayer-current-player-text: This class represents the text indicating 
+the current player for the first player. The styles set the width (width: 200px;), 
+center alignment of the content (display: flex; justify-content: center;), 
+backdrop filter (backdrop-filter: blur(15px); border: 2px solid rgba(255,255,255,0.5); 
+border-bottom: none; border-radius: 20px 20px 0 0;), font size (font-size: 20px;), 
+font weight (font-weight: bold;), opacity (opacity: 1;), 
+and transition effect (transition: opacity 500ms ease-in-out;). */
 .firstplayer-current-player-text {
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    backdrop-filter: blur(15px);
-    border: 2px solid rgba(255,255,255,0.5);
-    border-bottom: none;
-    border-radius: 20px 20px 0 0;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 1;
-    transition: opacity 500ms ease-in-out;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
 }
 
-/* .pluss-margin: Ez az osztály a felső margót jelöli az első játékos fő konténerén belül. 
-A stílusok beállítják a felső margót (margin-top: 69px;), 
-és a határokat (border-radius: 20px;). */
+/* .pluss-margin: This class represents the top margin within the main container 
+of the first player. 
+The styles set the top margin (margin-top: 69px;) 
+and border radius (border-radius: 20px;). */
 .pluss-margin {
-    margin-top: 69px;
-    border-radius: 20px;
+  margin-top: 69px;
+  border-radius: 20px;
 }
   
 /* .firstPlayer-main-container.animate: 
-Ez az osztály a bejövő animációt jelöli az első játékos fő konténerén. 
-A stílusok beállítják az átlátszóságot (opacity: 0;). */
+This class represents the incoming animation on the main container of the first player. 
+The styles set the opacity (opacity: 0;). */
 .firstPlayer-main-container.animate {
-    opacity: 0;
+  opacity: 0;
 }
 
-/* @keyframes fadeIn: Ez a kulcsfontosságú stílusdefiníció az "fadeIn" animációhoz. 
-A stílusok beállítják az animáció kezdőállapotát 
-(from { opacity: 0; }), és a befejező állapotot (to { opacity: 1; }). */
+/*@keyframes fadeIn: This keyframe style definition is for the "fadeIn" animation. 
+The styles set the initial state of the animation (from { opacity: 0; }) 
+and the final state (to { opacity: 1; }). */
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
   
-/* .fade-in: Ez az osztály az átmeneti animációt jelöli. 
-A stílusok beállítják az animációt (animation: fadeIn 300ms ease-in;). */
+/* .fade-in: This class represents the fade-in animation. 
+The styles apply the animation (animation: fadeIn 300ms ease-in;). */
 .fade-in {
-animation: fadeIn 300ms ease-in;
+  animation: fadeIn 300ms ease-in;
 }

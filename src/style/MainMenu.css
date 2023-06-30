@@ -1,88 +1,88 @@
-/* .menu-container: Ez az osztály egy konténer elemet reprezentál,
- amely a menü tartalmát fogja tartalmazni.
- A stílusok beállítják a konténer elrendezését (display: flex; flex-direction: column;),
- a tájolást középre (align-items: center;),
- a szélességet (width: 400px;) és a belső margót (padding: 50px;). */
+/* .menu-container: This class represents a container element that will contain 
+the menu content.
+The styles set the container's layout (display: flex; flex-direction: column;),
+center alignment (align-items: center;),
+width (width: 400px;), and padding (padding: 50px;). */
 .menu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 50px;
 }
 
-/* .menu-navlink-container: Ez az osztály egy tartály elemet jelöl,
-amely a menüben található navigációs linkeket fogja tartalmazni.
-A stílusok beállítják a tartály elrendezését (display: flex; flex-direction: column;),
-és a szélességét (width: 100%;). */
+/* .menu-navlink-container: This class represents a 
+container element that will contain the navigation links in the menu.
+The styles set the container's layout (display: flex; flex-direction: column;),
+and width (width: 100%;).*/
 .menu-navlink-container {
-    border: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-/* .menu-box: Ez az osztály egy doboz elemet jelöl,
-amely a menü fő tartalmát fogja tartalmazni.
-A stílusok beállítják a doboz szélességét és magasságát (width: 400px; height: 450px;),
-a háttér elmosását (backdrop-filter: blur(15px);), a szegélyt
-(border: 2px solid rgba(255, 255, 255, 0.5);), a határokat (border-radius: 20px;),
-a tájolást középre (display: flex; justify-content: center; align-items: center;),
-és a tájolást függőlegesen (flex-direction: column;). */
+/* .menu-box: This class represents a box element that will contain the
+ main content of the menu.
+The styles set the box's width and height (width: 400px; height: 450px;),
+background blur (backdrop-filter: blur(15px);), border
+(border: 2px solid rgba(255, 255, 255, 0.5);), border radius (border-radius: 20px;),
+center alignment (display: flex; justify-content: center; align-items: center;),
+and vertical alignment (flex-direction: column;). */
 .menu-box {
-    width: 400px;
-    height: 450px;
-    backdrop-filter: blur(15px);
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 400px;
+  height: 450px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* .menu-title: Ez az osztály a menü címét jelöli.
-A stílusok beállítják a cím szövegszínét (color: white;)
-és a betűméretét (font-size: 35px;). */
+/* .menu-title: This class represents the title of the menu.
+The styles set the text color (color: white;)
+and font size (font-size: 35px;). */
 .menu-title {
-    color: white;
-    font-size: 35px;
+  color: white;
+  font-size: 35px;
 }
 
-/* .menu-navlink: Ez az osztály a menü navigációs linkeket jelöli.
-A stílusok beállítják a linkek margóját (margin: 45px;), 
-a méretüket (width: 200px; height: 35px;), a szegélyüket (border: 3px solid white;),
-a határokat (border-radius: 10px;), a betűméretüket (font-size: 25px;),
-a szövegszínüket (color: white;),
-és a szöveg aláhúzását eltávolítják (text-decoration: none;). */
+/* .menu-navlink: This class represents the navigation links in the menu.
+The styles set the link's margin (margin: 45px;),
+size (width: 200px; height: 35px;), border (border: 3px solid white;),
+border radius (border-radius: 10px;), font size (font-size: 25px;),
+text color (color: white;),
+and remove text underline (text-decoration: none;). */
 .menu-navlink {
-    margin: 45px;
-    width: 200px;
-    height: 35px;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
+  margin: 45px;
+  width: 200px;
+  height: 35px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
 }
 
-/* .menu-navlink:hover: Ez az osztály a navigációs linkek hover állapotát jelöli.
-A stílusok beállítják a doboz árnyékát (box-shadow: 0px 0px 25px #888;),
-a szövegszínét (color: black;) és a háttérszínét (background-color: white;). */
+/* .menu-navlink:hover: This class represents the hover state of the navigation links.
+The styles set the box shadow (box-shadow: 0px 0px 25px #888;),
+text color (color: black;), and background color (background-color: white;). */
 .menu-navlink:hover {
-    box-shadow: 0px 0px 25px #888;
-    color: black;
-    background-color: white;
-  }
+  box-shadow: 0px 0px 25px #888;
+  color: black;
+  background-color: white;
+}
 
-/* @media (max-width: 430px): Ez a médialekérdezés a kisebb képernyőméretekre vonatkozik.
-A stílusok beállítják a .menu-box szélességét (width: 80%;) az erre a képernyőméretre. */
+/* @media (max-width: 430px): This media query targets smaller screen sizes.
+The styles set the width of .menu-box to 80% for this screen size. */
 @media (max-width: 430px) {
-    .menu-box {
-        width: 80%;
-    }
+  .menu-box {
+    width: 80%;
+  }
 }

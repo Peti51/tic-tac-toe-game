@@ -11,12 +11,12 @@ export const ScoreBoard = ({
     const { name, color } = firstPlayer;
     return (
       <>
-      {/* Az első <div> elem tartalmazza az aktuális játékos nevét, 
-      amikor ő következik a játékban. 
-      A szöveg színe a color változó alapján áll be, amely a firstPlayer
-      objektum tulajdonságai közé tartozik. 
-      A className attribútumának értéke a "firstplayer-current-player-text",
-      és opcionálisan a "fade-in" osztályt is tartalmazhatja. */}
+      {/* The first <div> element contains the name of the current player
+          when it is their turn in the game.
+          The color of the text is set based on the color variable, which is
+          one of the properties of the firstPlayer object.
+          The value of the className attribute is "firstplayer-current-player-text",
+          and it may optionally include the "fade-in" class. */}
       <div 
         className='firstPlayer-main-container'
       >
@@ -79,7 +79,7 @@ export const ScoreBoard = ({
     );
 }
 
-// A ScoreBoard komponens jeleníti meg a játékosok pontszámait 
-// és a soron következő játékos nevét. 
-// A stílusokat és osztályokat a kapott adatok alapján állítja be,
-// hogy megfelelően jelenítse meg a játék aktuális állapotát.
+// The ScoreBoard component displays the players' scores
+// and the name of the next player.
+// It sets the styles and classes based on the received data
+// to properly represent the current state of the game.

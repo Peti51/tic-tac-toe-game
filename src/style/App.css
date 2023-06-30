@@ -1,5 +1,5 @@
-/* Az .App osztály alkalmazása a gyökér elemre és beállítja 
-az alkalmazás elrendezését és háttérképét. */
+/* Applying the .App class to the root
+element and setting up the layout and background image of the application. */
 .App {
   width: 100%;
   text-align: center;
@@ -14,14 +14,16 @@ az alkalmazás elrendezését és háttérképét. */
   background-position: center;
 }
 
-/* Az .App-main-container osztály meghatározza az alkalmazás fő konténerének stílusait. */
+/* Setting the styles for the 
+main container of the application in the .App-main-container class. */
 .App-main-container {
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-/* A .submit-button class meghatározza a gombok stílusait. A hover-el együtt.*/
+/* The .submit-button class defines the styles for the buttons, 
+including hover effects. */
 .submit-button {
   width: 200px;
   height: 35px;
@@ -43,19 +45,20 @@ az alkalmazás elrendezését és háttérképét. */
   background-color: white;
 }
 
-  /* A .back-arrow-container classs meghatározza a vissza nyíl elem konténerének stílusait. */
-  .back-arrow-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /* The .back-arrow-container class 
+  defines the styles for the container of the back arrow element. */
+.back-arrow-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 1028px) {
   .App-main-container {
-      display: flex;
-      flex-direction: column;
-      width: 550px;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
   }
 
   .Big-board-container {

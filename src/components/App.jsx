@@ -1,5 +1,6 @@
-// Ez a modul felelős az alkalmazás fő komponensének megjelenítéséért és állapotkezeléséért.
-// Az alkalmazás React Router-t használ a különböző oldalak kezeléséhez.
+// This module is responsible for displaying and managing the 
+// main component of the application.
+// The application uses React Router to handle different pages.
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   Route,
@@ -15,17 +16,16 @@ import { Settings } from './Settings';
 const currentUserName = 'Peti';
 const currentPassword = '12345';
 
-// Az alkalmazás fő komponense.
-// Kezeli a játéktábla állapotát, a játékosok állapotás,
-// ez a komponens ellenőrzi, hogy a 
-// játék állását azaz ki a nyertes vagy a játék döntetlen e,
-// valmint itt váltakoznak az oldalak.
+// The main component of the application.
+// It manages the state of the game board, 
+// players, and controls the game progress,
+// including checking for a winner or a draw, 
+// and switching between pages.
 function App() {
   const winningLength = 5;
   const [board, setBoard] = useState(Array.from(
       { length: 10 }, () => Array(10).fill(null)
     ));
-  // Ez a 
   const [xPlaying, setXPlaying] = useState(true);
   const [scores, setScores] = useState({ xScore: 0, oScore: 0 });
   const [isGameOver, setIsGameOver] = useState(false);
@@ -41,19 +41,19 @@ function App() {
     symbol: 'O',
   });
 
-// Ellenőrzi, hogy van-e győztes a játéktáblán.
-// @returns {string|null} A győztes játékos jelkódja ('X', 'O') vagy 'draw', ha döntetlen, vagy null, ha nincs győztes.
-
+// Checks if there is a winner on the game board.
+// @returns {string|null} The symbol ('X', 'O') of the winning player,
+// 'draw' if it's a draw, or null if 
   const checkWinner = useCallback(() => {
     if (!board || board.length === 0) {
-    return null; // Azt az állapotot kezeli ha, valamilyen hiba miatt a tábla hossza('lenght') undefined lenne
+    return null; // Handles the case when the length of the board is undefined due to some error.
   }
     const rows = board.length;
     const cols = board[0].length;
 
     let winner = null;
 
-    // Ellenőrzi, hogy valamelyik sorban valamelyik játékosnak kigyűlt-e az 5 egymásmelleti jel.
+    // Checks if any player has a winning line of 5 symbols in any row.
     board.forEach((row) => {
       row.forEach((_, col) => {
         if (col < cols - winningLength + 1) {
@@ -76,7 +76,7 @@ function App() {
       });
     });
 
-    // Ellenőrzi, hogy valamelyik oszlopban valamelyik játékosnak kigyűlt-e az 5 egymásmelleti jel.
+    // Checks if any player has a winning line of 5 symbols in any column.
     board[0].forEach((_, col) => {
       board.forEach((_, row) => {
         if (row < rows - winningLength + 1) {
@@ -99,7 +99,7 @@ function App() {
       });
     });
 
-// Ellenőrzi, hogy valamelyik átlóban az egyik játékosnak kigyűlt-e az 5 egymásmelleti jel. (bal felső sarokból-ből a jobb-alsó sarokba)
+    // Checks if any player has a winning line of 5 symbols in any diagonal (top-left to bottom-right).
     board.forEach((_, row) => {
       board[row].forEach((_, col) => {
         if (row < rows - winningLength + 1 && col < cols - winningLength + 1) {
@@ -122,7 +122,7 @@ function App() {
       });
     });
 
-// Ellenőrzi, hogy valamelyik átlóban valamelyik játékosnak kigyűlt-e az 5 egymásmelleti jel. (jobb-felső sarokból-ből a bal-alsó sarokba)
+    // Checks if any player has a winning line of 5 symbols in any diagonal (top-right to bottom-left).
     board.forEach((_, row) => {
       board[row].forEach((_, col) => {
         if (row < rows - winningLength + 1 && col >= winningLength - 1) {
@@ -149,13 +149,13 @@ function App() {
       return winner;
     }
 
-    // Ellenőrzi a döntetlent
+    // Checks for a draw
     if (board.every((row) => row.every((value) => value !== null))) {
       return 'draw';
     }
   }, [board, winningLength]);
 
-  // Ez a function kezeli a 
+  // This function handles the placement of the characters in the board.
   const handleBoxClick = (rowIndex, colIndex) => {
     if (board[rowIndex][colIndex] === null && !isGameOver) {
       const updatedBoard = board.map((row, rIndex) =>
@@ -187,9 +187,9 @@ function App() {
   const winnerPlayer = checkWinner();
 
   useEffect(() => {
-    // Ez az if block kezeli a gyöztes nevét kiíró felugró ablak megjelenítését, 
-    // hogy ne lehessen új jelet letenni ha van egy gözetes,
-    //  valamint az eredmény kijelzését is ez a block kezeli.
+    // This if block handles displaying the popup window with the name of the winner,
+    // disabling further moves if there is a winner,
+    // and updating the scores.
     const winner = checkWinner();
 
     if (winner === 'draw') {
@@ -209,9 +209,10 @@ function App() {
   return (
     <div className="App">
       <>
-      {/* A Routes-ban van a többi komponens a tábla a beállítások menüpont('Settings'), 
-          valamint a főmenu. Valamint abban az esetben ha probléma lenne
-          a Router-el akkor itt jelenik meg a NotFoundPage*/}
+      {/* The Routes component contains the other components: the game board,
+          the settings menu, and the main menu.
+          Additionally, if there is an issue with the Router, 
+          the NotFoundPage component is rendered. */}
         <Routes>
           <Route path="/" element={<Login currentUserName={currentUserName} currentPassword={currentPassword} />} />
           <Route path="/menu" element={<MainMenu />} />

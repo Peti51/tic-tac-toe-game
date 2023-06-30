@@ -1,43 +1,43 @@
-/* .Board: A tábla elemeknek grid elrendezése lesz,
-az oszlopok szélessége 10-szeresen ismétlődik 3 rem-en.
-A tartalom középre lesz igazítva, és 20 pixeles border-rel 
-és háttér-elmosással (backdrop-filter) rendelkezik.
-Az átlátszó hatással (0.5-ös opacitású) fehér szegély is van. */
+/* .Board: The elements of the board will have a grid layout,
+with column widths repeating 10 times at 3rem each.
+The content will be centered and have a 20-pixel border
+with backdrop filtering.
+There is also a white border with a transparent effect (0.5 opacity). */
 .Board {
-    display: grid;
-    grid-template-columns: repeat(10, 3rem);
-    place-items: center;
-    justify-content: center;
-    backdrop-filter: blur(15px);
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 3rem);
+  place-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
 }
 
-/* .Big-board-container: A táblák konténere egy oszlopos flex elrendezéssel rendelkezik,
-tartalma középre van igazítva, és 100%-os szélességgel rendelkezik. */
+/* .Big-board-container: The container for the boards has a single-column flex layout,
+with content centered and occupying 100% width. */
 .Big-board-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .board-back-arrow-container: A vissza gomb konténere 
-60%-os szélességgel rendelkezik és egy kis margóval rendelkezik az alsó részen. */
+/* .board-back-arrow-container: The container for the back button
+has a width of 60% and a small margin at the bottom. */
 .board-back-arrow-container {
-    width: 60%;
-    margin-bottom: 10px;
+  width: 60%;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
-    .Board {
-        grid-template-columns: repeat(10, 2rem);
-    }
+  .Board {
+    grid-template-columns: repeat(10, 2rem);
+  }
 }
 
 @media (max-width: 400px) {
-    .Board {
-        grid-template-columns: repeat(10, 1.5rem);
-    }
+  .Board {
+    grid-template-columns: repeat(10, 1.5rem);
+  }
 }
