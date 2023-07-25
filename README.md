@@ -1,11 +1,20 @@
-A feladat elkészítéséhez a React-et választottam, mert ez a JavaScript keretrendszer számos előnnyel jár a fejlesztés szempontjából. Az egyik fő ok, amiért a React mellett döntöttem, az az, hogy lehetővé teszi a komponensalapú fejlesztést. Ez azt jelenti, hogy a webes alkalmazást különálló komponensekre bonthatom, amiket könnyedén újrahasznosíthatok és kombinálhatok. Ezáltal a kód sokkal modulárisabbá válik, ami egyszerűbb karbantarthatóságot és fejlesztést eredményez. Ezenkívül a React használata során az egész alkalmazásállapot könnyedén kezelhető, mivel a React által biztosított "state" rendszer segítségével az adatok dinamikusan frissíthetők és a felhasználói interakciókra reagálhatnak.
+For the project, I chose React as the primary technology due to its component-based development approach, which enables breaking down the web application into separate reusable components. This results in more modular and maintainable code, making development easier and efficient.
 
-A JSX (JavaScript XML) használata révén a React lehetővé teszi a komponensek és az HTML elemek egyszerű kombinálását. Ezzel a megközelítéssel egy fájlban lehet kezelni mind a JavaScript kódot, mind pedig a hozzá kapcsolódó HTML struktúrát (DOM). Ez nagyban megkönnyíti az alkalmazás kódjának olvashatóságát és karbantarthatóságát.
-Összességében a React alkalmazása egyszerűbbé és könnyebbé teszi a fejlesztési folyamatot. Az előnyei közé tartozik a komponensalapú fejlesztés, az állapotkezelés és a JSX használata, amelyek mind hozzájárulnak a hatékony és rugalmas webalkalmazások létrehozásához.
+To handle user input and data submission, I implemented Forms, allowing seamless interaction with the application.
 
-A projekt elindításához szükséges a terminálban az npm install parancs, ezután az npm-mel kell telepíteni a framer-motion-t, ami az animációkért felelős. Azért ezt használtam, mert ennek az alkalmazását találtam a legkézenfekvőbbnek ahhoz, hogy az oldalváltozások megfelelőképpen történjenek meg és az animációk működjenek. Ezután csak az npm start-tal lehet elindítani az alkalmazást.
+For managing navigation and rendering different pages, I utilized Routers, ensuring smooth transitions between various views within the web application.
 
-Felhasználónév: Peti,
-Jelszó: 12345,
+To add stateful logic to functional components, I employed React Hooks, enabling dynamic updates and interactions.
+
+To enhance error handling and prevent crashes, I implemented Error Boundaries, ensuring a more robust application.
+
+For displaying interactive modal dialogs or pop-up windows, I integrated Popups into the project, enhancing the user experience.
+
+Finally, I created a dedicated Login Page, providing users with a secure authentication process to access the web application.
+
+By combining these technologies, the project delivers an efficient, flexible, and user-friendly web application with advanced features for seamless user interactions and data management.
+
+Username: Peti,
+Password: 12345,
 
 [DEMO LINK]:"https://Peti51.github.io/tic-tac-toe-game",
